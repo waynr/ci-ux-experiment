@@ -1,6 +1,18 @@
 github_repo: puppetlabs/classifier
 prs_enabled: True
 
+init_mergely_platform_axis: centos6 ubuntu1404
+init_mergely_layout_axis: 64mdcal
+init_mergely_release: 'TRUE'
+
+init_periodic_platform_axis: centos6 ubuntu1204 redhat7 ubuntu1404
+init_periodic_layout_axis: 64mdcal 64mdcal-32f
+init_periodic_release: 'FALSE'
+
+init_pr_platform_axis: centos6 ubuntu1204 redhat7 ubuntu1404
+init_pr_layout_axis: 64mdcal 64mdcal-32f
+init_pr_release: 'FALSE'
+
 pipelines:
     - 'composite-ezbake_v0':
         git_branch: stable

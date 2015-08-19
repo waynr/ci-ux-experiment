@@ -1,1 +1,5 @@
-hipchat_room: 'RBAC'
+hipchat_room:
+    - 'Node Classifier'
+hipchat_start_notify: False
+hipchat_notify_success: False
+

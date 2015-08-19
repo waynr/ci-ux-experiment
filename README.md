@@ -123,16 +123,21 @@ new changes allows developers
 
 #### Visualize Job Relationships
 ```
-./bin/ci-viz.py -r 
+./bin/ci-viz.py -r "enterprise_classifier.*"
 ```
-Generate a viz diagram of the 
+Generate a diagram showing the relationship between jobs matching the given
+regex.
 
 ### Testing
 
 #### Compare Revisions
 ```
-./bin/ci-compare-revisions.py
+./bin/ci-compare-revisions.py -r "enterprise_classifier.*" revA revB
 ```
+* Check out revision A of this git repo, generate job config data
+* Check out revision B of this git repo, generate job config data
+* Generate diffs of job configs and list of added/deleted jobs for jobs whose
+names match the given regex.
 
 
 ### Deployment
