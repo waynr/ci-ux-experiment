@@ -1,0 +1,15 @@
+github_repo: puppetlabs/classifier
+prs_enabled: True
+
+pipelines:
+    - 'composite-ezbake_v0':
+        git_branch: stable
+        pe_family: 2015.3.x
+
+    - 'composite-ezbake_v0':
+        git_branch: master
+        pe_family: 2015.3.x
+
+    - 'composite-ezbake_v0':
+        git_branch: burnside
+        pe_family: 2016.1.x
